@@ -1,0 +1,129 @@
+<h1 id="main-title" class="title">Лабораторна робота №5: селектори</h1>
+
+<p class="bold">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+</p>
+<h2>Наші цілі</h2>
+<ol class="goals">
+  <li class="list__item">Ціль 1</li>
+  <li class="list__item">Ціль 2</li>
+  <li class="list__item bold"><span>Ціль 3</span></li>
+  <li class="list__item bold"><span>А це ціль 4</span></li>
+</ol>
+<h2>Завантажити цілі</h2>
+<ol class="goals">
+  1. Файл для завантаження 1.<br>
+  2. Файл для завантаження 2.<br>
+  3. Файл для завантаження 3.<br>
+  4. Файл для завантаження 4.<br>
+  5. Файл для завантаження 5.<br>
+</ol>
+<p c2.lass="align-right">Написати <a href="mailto:eduard.barzul@student.uzhnu.edu.ua">нам листа</a></p>
+
+
+<style>/* 14. box-sizing для всіх можливих селекторів */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 1. клас для h1 — uppercase */
+.title {
+  text-transform: uppercase;
+}
+
+/* 2. клас для списку цілей */
+.goals {
+  color: #ff0000;
+}
+
+/* 3. пункти списку цілей */
+.goals .list__item {
+  background-color: yellow;
+  font-style: italic;
+}
+
+/* 4. всі впорядковані списки */
+ol {
+  border: 1px solid red;
+}
+
+/* 5. id для h1 */
+#main-title {
+  color: green;
+}
+
+/* 6. посилання на PDF */
+a[href$=".pdf"] {
+  color: green;
+  font-style: italic;
+}
+
+/* 7. всі посилання */
+a {
+  color: violet;
+  text-decoration: none;
+}
+
+/*
+Питання:
+PDF-файли лишились зелені, бо селектор a[href$=".pdf"]
+має більшу специфічність ніж просто a
+*/
+
+/* 8. вкладені списки другого рівня */
+ul ul {
+  text-transform: uppercase;
+}
+
+/* 9. посилання всередині абзаців */
+p a {
+  color: magenta;
+  background-color: mistyrose;
+}
+
+/* 10. клас bold */
+.bold {
+  font-weight: bold;
+}
+
+/*
+Питання:
+Одночасно bold і italic, бо font-style і font-weight —
+різні властивості і не конфліктують
+*/
+
+/* 11. li з класом bold */
+li.bold {
+  text-transform: uppercase;
+}
+
+/* 12. другий довгий абзац і "Написати нам листа" */
+p:nth-of-type(2),
+.align-right {
+  text-align: right;
+  border: 2px solid blue;
+  font-size: 20px;
+}
+
+/* 13. h1 червоний (НЕ спрацює) */
+h1 {
+  color: red;
+}
+
+/*
+Чому не працює:
+id-селектор #main-title має більший пріоритет
+
+Як змусити працювати:
+1) або використати !important
+2) або h1#main-title
+*/
+
+/* 15. фон лише по ширині тексту */
+.goals .list__item span {
+  background-color: yellow;
+  display: inline-block;
+}
+</style>
