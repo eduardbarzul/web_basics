@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>Лабораторна робота №6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Лабораторна робота №6: CSS властивості ч.#2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="double-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <a href="link.html">eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Наші переваги</h2>
+    <ul class="our-adv">
+      <li>Перевага 1</li>
+      <li>Перевага 2
+        <ul>
+          <li>Підпункт 2.1</li>
+          <li>Підпункт 2.2</li>
+        </ul>
+      </li>
+      <li>Перевага 3</li>
+    </ul>
+    
+    <h2>Наші контакти</h2>
+    <p class="ruler">Довжина: 150px</p>
+<div>
+      <p>Наша пошта:<div class="mail-box"><a 
+href="mailto:eduard.barzul@student.uzhnu.edu.ua">eduard.barzul@student.uzhnu.edu.ua</a></p>
+    </div>
+  </body>
+</html>
+
+
+<style>
+body {
+  font-family: serif;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #777;
+}
+
+/* 2. Для всіх вкладених списків */
+ul ul {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* 3. Для всіх заголовків */
+h1, h2 {
+  font-family: 'Cormorant Infant', serif;
+  letter-spacing: 0.5px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/* 4. Заголовок першого рівня */
+h1 {
+  font-size: 32px;
+}
+
+/* 5. Заголовки другого рівня */
+h2 {
+  font-size: 26px;
+}
+
+/* 6. Другий абзац */
+.double-line {
+  line-height: 2;
+}
+
+/* 7. Блок з поштою */
+.mail-box {
+  width: 150px;
+  background-color: #E3FFF6;
+  border: 5px solid #C2E4C2;
+  padding: 5px 20px;
+  
+  /* 8. Врахування рамки та відступів у ширині */
+  box-sizing: border-box;
+}
+
+/* 9. Ламання довгого тексту */
+.mail-box a {
+  word-break: break-all;
+}
+
+/* 10. Емейл з нового рядка */
+.mail-box a {
+  display: block;
+}
+
+/* 11. Вирівнювання абзаців */
+p {
+  text-align: justify;
+}
+
+/* 12. Список переваг */
+.our-adv {
+  background-image: url('http://picsum.photos/id/357/700/400?blur=5');
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* 13. Коректне відображення фону */
+.our-adv {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 14. Відступи для h2 */
+h2 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+/* СЛУЖБОВІ СТИЛІ */
+.ruler {
+  width: 150px;
+  background-color: lime;
+  text-align: center;
+}
+</style>
