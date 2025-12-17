@@ -1,0 +1,151 @@
+<main class="page">
+  <section class="addresses-wrapper">
+
+    <address class="address">
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/monochrome-linear-icon-library/address-90.png"
+           alt="Location icon"
+           class="address__icon">
+
+      <strong class="address__header">Address 1</strong>
+      Box 564, Huston<br>
+      <em>USA</em>
+
+      <a class="address__delete-btn" href="#" title="Видалити">&times;</a>
+
+      <img src="https://fleetsupport.mobilelinkgen.com/hc/article_attachments/360086975611/ReadyStatus.svg"
+           alt="Default address"
+           title="Встановлено за замовченням"
+           class="address__status">
+    </address>
+
+    <address class="address">
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/monochrome-linear-icon-library/address-90.png"
+           alt="Location icon"
+           class="address__icon">
+
+      <strong class="address__header">Address 2</strong>
+      Box 112, Berlin<br>
+      <em>Germany</em>
+
+      <a class="address__delete-btn" href="#" title="Видалити">&times;</a>
+    </address>
+
+    <address class="address">
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/monochrome-linear-icon-library/address-90.png"
+           alt="Location icon"
+           class="address__icon">
+
+      <strong class="address__header">Address 3</strong>
+      Box 77, Paris<br>
+      <em>France</em>
+
+      <a class="address__delete-btn" href="#" title="Видалити">&times;</a>
+    </address>
+
+  </section>
+</main>
+<style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 1 */
+.addresses-wrapper {
+  padding: 20px;
+}
+
+.address__icon {
+  width: 70px;
+}
+
+.address__status {
+  width: 32px;
+}
+
+/* 2 */
+.address {
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px 20px;
+  border-radius: 10px;
+  font-style: normal;
+  background-color: #FFE4C4;
+}
+
+/* 3 */
+.address__delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background-color: #FF8E50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 20px;
+  padding: 10px;
+  font-weight: bold;
+
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* 4 */
+.address__delete-btn:hover {
+  background-color: #FFD050;
+}
+
+/* 5 */
+.address__status {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* 6 */
+.address__header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 7 */
+.address__icon {
+  float: left;
+  margin-right: 10px;
+}
+
+/* 10 */
+.address {
+  display: inline-block;
+  width: 32%;
+  margin: 1%;
+  vertical-align: top;
+}
+
+/* 11 */
+.address:first-child {
+  margin-left: 0;
+  background-color: #F0FFC1;
+}
+
+.address:last-child {
+  margin-right: 0;
+  background-color: #B6FFDA;
+}
+
+/* 12 */
+.address:hover {
+  background-color: #F3F3F3;
+}
+
+/* 13 */
+@media (max-width: 767px) {
+  .address {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+.address:nth-child(3n + 1) { margin-left: 0; }
+.address:nth-child(3n) { margin-right: 0; }
+</style>
